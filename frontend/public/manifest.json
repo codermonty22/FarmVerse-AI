@@ -1,0 +1,17 @@
+{
+  "name": "FarmVerse AI - Farmer's Complete Wealth Guide",
+  "short_name": "FarmVerse AI",
+  "description": "AI-Powered Agricultural Business Intelligence Platform for Indian Farmers",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7F5EB",
+  "theme_color": "#245638",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

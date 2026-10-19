@@ -1,0 +1,6 @@
+{
+  "name": "FarmVerse AI - Agricultural Intelligence & Wealth Guide",
+  "description": "Comprehensive agricultural business intelligence platform for Indian farmers featuring crop recommendations, disease detection, market trends, profit planning, waste-to-wealth, and government schemes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

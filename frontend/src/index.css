@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-forest: #245638;
+    --color-forest-dark: #1b412a;
+    --color-cream: #F7F5EB;
+    --color-sage: #DDEBD7;
+    --color-amber: #E8B65C;
+    --color-charcoal: #202820;
+    --color-terracotta: #C85A32;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #F7F5EB;
+    color: #202820;
+    min-height: 100vh;
+  }
+}
+
+/* Custom Design System Utilities */
+.neo-card {
+  background-color: #FFFFFF;
+  border: 2px solid #202820;
+  box-shadow: 3px 3px 0px #202820;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.neo-card-hover:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px #202820;
+}
+
+.neo-card-active:active {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0px #202820;
+}
+
+.neo-card-forest {
+  background-color: #FFFFFF;
+  border: 2px solid #245638;
+  box-shadow: 3px 3px 0px #245638;
+}
+
+.neo-card-amber {
+  background-color: #FFFFFF;
+  border: 2px solid #202820;
+  box-shadow: 3px 3px 0px #E8B65C;
+}
+
+.neo-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 1.5px solid #202820;
+  border-radius: 9999px;
+}
+
+/* Glassmorphism with Grounded Neo-Brutalist Depth */
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 2px solid #202820;
+  box-shadow: 6px 6px 0px #202820, inset 0 1px 2px 0 rgba(255, 255, 255, 0.9);
+}
+
+.glass-card-forest {
+  background: rgba(36, 86, 56, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 2px solid #202820;
+  box-shadow: 6px 6px 0px #202820, inset 0 1px 2px 0 rgba(255, 255, 255, 0.3);
+}
+
+.glass-panel {
+  background: rgba(247, 245, 235, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1.5px solid rgba(32, 40, 32, 0.2);
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 2px solid #202820;
+  box-shadow: inset 1px 1px 3px rgba(32, 40, 32, 0.08);
+}
+.glass-input:focus {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 2px 2px 0px #245638;
+}
+
+/* Neumorphic tactile accents */
+.neu-raised-sm {
+  background: #F7F5EB;
+  box-shadow: 2px 2px 6px rgba(32, 40, 32, 0.08), -2px -2px 6px rgba(255, 255, 255, 0.9);
+}
+
+.neu-raised {
+  background: #FFFFFF;
+  box-shadow: 4px 4px 10px rgba(32, 40, 32, 0.06), -4px -4px 10px rgba(255, 255, 255, 0.9);
+}
+
+.neu-inset {
+  background: #EFECE1;
+  box-shadow: inset 2px 2px 4px rgba(32, 40, 32, 0.1), inset -2px -2px 4px rgba(255, 255, 255, 0.8);
+}
+
+.neu-chip-active {
+  background: #245638;
+  color: #FFFFFF;
+  border: 1.5px solid #202820;
+  box-shadow: inset 1px 1px 2px rgba(0,0,0,0.25);
+}
+
+.neu-chip-inactive {
+  background: #FFFFFF;
+  color: #202820;
+  border: 1.5px solid #D5DEC9;
+}
+.neu-chip-inactive:hover {
+  background: #DDEBD7;
+  border-color: #245638;
+}
+
+/* Scrollbar aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F5EB;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5C1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #245638;
+}
